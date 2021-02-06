@@ -63,7 +63,7 @@ Thus, start with a welcoming message such as:
 Welcome 'Player One' to my Rock-Paper-Scissors game...
 ```
 
-## 2.1) Asking user for an input 
+## 2.1) Ask user for an input 
 
 The aim of this step is to ask the user to input an option between "rock", "paper", or "scissors". For this purpose use the input function: 
 
@@ -73,4 +73,19 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': rock")
 print(f"You chose: {user_choice}")
 ```
 
-# 2.2) Validate
+## 2.2) Validate User Input 
+
+This step aims at understanding if the user has chosen a valid option, that is "rock", "paper", or "scissors", as an invalid option would cause the program to stop executing. 
+First, present the valid options ("rock", "paper", "scissors").
+Second, use the "if" statement function along with the [else] keyword, followed by a colon ([:]), and one indented line that contain the "INVALID" statement if a valid option has not been chosen. 
+Finish by adding the [exit()] keyword after the else function to stop the program. 
+
+'''sh 
+valid_options = ["rock", "paper", "scissors"]
+
+if user_choice in valid_options: 
+    print ("VALID")
+else:
+    print ("INVALID")
+    exit()
+'''

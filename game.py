@@ -27,7 +27,7 @@ else:
     exit()
 
 #
-# Simulating a computer input 
+# Simulate a computer input 
 #
 
 
