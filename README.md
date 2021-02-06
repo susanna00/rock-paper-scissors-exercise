@@ -51,4 +51,26 @@ python game.py
 Once you see the "Rock, Paper, Scissors, Shoot!" message, you can move forward with the implementation of the exercise. 
 
 
+## 2) IMPLEMENTATION 
 
+There are many ways to complete the implementation of the exercise. Nonetheless, to facilitate the process, I would suggest to start by adding first a welcoming message, and then proceed with each step. 
+
+> NOTE: You should aim to make separate commits for each section. 
+
+Thus, start with a welcoming message such as: 
+
+```sh
+Welcome 'Player One' to my Rock-Paper-Scissors game...
+```
+
+## 2.1) Asking user for an input 
+
+The aim of this step is to ask the user to input an option between "rock", "paper", or "scissors". For this purpose use the input function: 
+
+```sh
+user_choice = input("Please choose either 'rock', 'paper', or 'scissors': rock")
+
+print(f"You chose: {user_choice}")
+```
+
+# 2.2) Validate

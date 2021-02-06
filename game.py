@@ -7,7 +7,7 @@ print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 #
-# Asking user for an input
+# Ask user for an input
 #
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': rock")
@@ -17,6 +17,14 @@ print(f"You chose: {user_choice}")
 #
 # Validate user input
 #
+
+valid_options = ["rock", "paper", "scissors"]
+
+if user_choice in valid_options: 
+    print ("VALID")
+else:
+    print ("INVALID")
+    exit()
 
 #
 # Simulating a computer input 
