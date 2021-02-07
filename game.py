@@ -62,6 +62,9 @@ else:
     print("Oh no, something went wrong :((")
 
 
+print("-------------------")
+print("Thank you for playing! The game is over, please play again!")
+print("-------------------")
 
 
 
