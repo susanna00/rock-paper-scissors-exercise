@@ -38,5 +38,32 @@ print(f"The computer chose: {computer_choice}")
 # Determining who won
 #
 
+computer_choice = computer_choice.lower()
+user_choice = user_choice.lower()
+
+if computer_choice == user_choice:
+    print("...Nobody won, it's a tie")
+elif computer_choice == "rock":
+    if user_choice == "scissors":
+        print ("Oh, the computer won. It's ok. :(")
+    elif user_choice == "paper":
+        print ("Congratulations! You won!! :)")
+elif computer_choice == "scissors":
+    if user_choice == "paper":
+        print("Oh, the computer won. It's ok. :(")
+    elif user_choice == "rock":
+        print ("Congratulations! You won!! :)")
+ elif computer_choice == "paper":
+     if user_choice == "rock":
+         print ("Oh, the computer won. It's ok. :(")
+    elif user_choice == "scissors":
+        print ("Congratulations! You won!! :)")
+else: 
+    print("Oh no, something went wrong :((")
+
+
+
+
+
 
 
