@@ -30,6 +30,9 @@ else:
 # Simulate a computer input 
 #
 
+computer_choice = random.choice(valid_options)
+
+print(f"The computer chose: {computer_choice}")
 
 #
 # Determining who won

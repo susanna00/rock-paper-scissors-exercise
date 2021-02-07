@@ -89,3 +89,22 @@ else:
     print ("INVALID")
     exit()
 '''
+
+## 2.3) Simulate Computer Selection 
+
+The purpose of this step is to make the application randomlu select and assign the computer player's option between "rock", "paper", or "scissors". 
+Use the [choice()] function to randomly select an option within the [valid_options()] list you previously created. 
+Then, use the [print()] function to assign the option as the computer player's choice. 
+
+> NOTE: It is really important to remember to add: "import random" (for convenience's sake I added it at the beginning of the exercise). This module avoids to display the message 'NameError: name 'random' is not defined'. 
+
+Your code should look like this: 
+'''sh
+import random 
+
+computer_choice = random.choice(valid_options)
+
+print(f"The computer chose: {computer_choice}")
+'''
+
+
