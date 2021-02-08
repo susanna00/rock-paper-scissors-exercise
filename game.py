@@ -1,18 +1,30 @@
 # game.py
 
+import os 
 import random 
 
+from dotenv import load_dotenv
+print("Rock, Paper, Scissors, Shoot!")
+
+load_dotenv()
+
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One")
+
+
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("Welcome '{PLAYER_NAME}' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 #
 # Ask user for an input
 #
 
-user_choice = input("Please choose either 'rock', 'paper', or 'scissors': rock")
+user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
+
+user_choice = user_choice.lower()
 
 print(f"You chose: {user_choice}")
+
 
 #
 # Validate user input
@@ -23,7 +35,7 @@ valid_options = ["rock", "paper", "scissors"]
 if user_choice in valid_options: 
     print ("VALID")
 else:
-    print ("INVALID")
+    print ("INVALID, TRY AGAIN!")
     exit()
 
 #
