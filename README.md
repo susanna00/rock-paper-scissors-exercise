@@ -53,7 +53,7 @@ Once you see the "Rock, Paper, Scissors, Shoot!" message, you can move forward w
 
 ## 2) IMPLEMENTATION 
 
-There are many ways to complete the implementation of the exercise. Nonetheless, to facilitate the process, I would suggest to start by adding first a welcoming message, and then proceed with each step. 
+There are many ways to complete the implementation of the exercise. Nonetheless, to facilitate the process, I would suggest to start by asking the user for an input, validate it, simulate the computer selection, determine who the winner is, and finally make some changes to your repository along with installing new packages to add a welcoming message with a customized name. 
 
 > NOTE: You should aim to make separate commits for each section. 
 
@@ -153,20 +153,20 @@ Add a final friendly farewell message, such as "Thank you for playing! The game 
 ## 3) Customize the Player Name 
 
     1. In your repository, through Visual Studio Code, create a new file called ".env"
+
     2. In the first line add a line of code 
-        ```sh 
         PLAYER_NAME= "Your name"
-        ```
+
     3. Make sure the repository's ".gitignore" file includes an entry about the ".env" file
+
     4. Create another file called "requirements.txt"
     5. In the first line type:
-    ```sh
     python-dotenv
-    ```
+    
     6. Access to your repository through Gitbash and install a new package:
-    ```sh
+    
     pipinstall -r requirements.txt 
-    ```
+    
 Now you can add the last lines at the top of your game.py file to display the customized name with the first welcoming message. 
 
 ```sh 
