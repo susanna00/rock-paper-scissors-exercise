@@ -1,9 +1,9 @@
 # Rock-Paper-Scissors-exercise
 
-The Rock-Paper-Scissors is an interactive game that allows a human user to play against a computer opponent. 
+The Rock Paper Scissors is an interactive game that allows a human user to play against a computer opponent. 
 
 ## 1) SETUP
-## 1.1) Repository setup 
+# 1.1) Repository setup 
  
  Before you start with the implementation of the game you need to be sure to go through some key steps to setup your computer. 
 
