@@ -53,9 +53,9 @@ elif computer_choice == "scissors":
         print("Oh, the computer won. It's ok. :(")
     elif user_choice == "rock":
         print ("Congratulations! You won!! :)")
- elif computer_choice == "paper":
-     if user_choice == "rock":
-         print ("Oh, the computer won. It's ok. :(")
+elif computer_choice == "paper":
+    if user_choice == "rock":
+        print ("Oh, the computer won. It's ok. :(")
     elif user_choice == "scissors":
         print ("Congratulations! You won!! :)")
 else: 
