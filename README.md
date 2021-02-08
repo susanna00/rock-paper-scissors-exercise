@@ -107,4 +107,51 @@ computer_choice = random.choice(valid_options)
 print(f"The computer chose: {computer_choice}")
 '''
 
+## 2.4) Determine the winner 
+
+This step aims at determing the winner by comparing the user's and the computer's selection. The code should include four different possibilities: 
+
+    1. "Tie" resulting from Rock vs Rock, Paper vs Paper, and Scissors vs Scissors
+    2. Rock beats Scissors 
+    3. Paper beats Rock
+    4. Scissors beats Paper 
+
+For the purpose of this step use "if" statements, which are defined by the if keyword, followed by a condition to be evaluated, followed by a colon (:). The "if" statement contains [elif] keywords, also followed by a colon (:), followed by indented lines that contain the statements to be executed if the condition is met. I.e.:
+    
+    1."...Nobody won, it's a tie"
+    2. "Congratulations! You won!! :)"
+    3. "Oh, the computer won. It's ok. :("
+
+Lastly, add an [else] keyword followed by a colon (:), followed by an indented line that contain a statement ("Oh no, something went wrong :( ") to be executed if the original condition is not met. 
+
+Your code should look like the following, however you can adjust the statements as you wish: 
+
+'''sh 
+computer_choice = computer_choice.lower()
+user_choice = user_choice.lower()
+
+if computer_choice == user_choice:
+    print("...Nobody won, it's a tie")
+elif computer_choice == "rock":
+    if user_choice == "scissors":
+        print ("Oh, the computer won. It's ok. :(")
+    elif user_choice == "paper":
+        print ("Congratulations! You won!! :)")
+elif computer_choice == "scissors":
+    if user_choice == "paper":
+        print("Oh, the computer won. It's ok. :(")
+    elif user_choice == "rock":
+        print ("Congratulations! You won!! :)")
+ elif computer_choice == "paper":
+     if user_choice == "rock":
+         print ("Oh, the computer won. It's ok. :(")
+    elif user_choice == "scissors":
+        print ("Congratulations! You won!! :)")
+else: 
+    print("Oh no, something went wrong :((")
+'''
+
+## 2.5) Final information output 
+
+Add a final friendly farewell message, such as "Thank you for playing! The game is over, please play again!". 
 
