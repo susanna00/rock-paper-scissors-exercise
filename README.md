@@ -107,16 +107,16 @@ print(f"The computer chose: {computer_choice}")
 
 This step aims at determing the winner by comparing the user's and the computer's selection. The code should include four different possibilities: 
 
-    + 1. "Tie" resulting from Rock vs Rock, Paper vs Paper, and Scissors vs Scissors
-    + 2. Rock beats Scissors 
-    + 3. Paper beats Rock
-    + 4. Scissors beats Paper 
+    1. "Tie" resulting from Rock vs Rock, Paper vs Paper, and Scissors vs Scissors
+    2. Rock beats Scissors 
+    3. Paper beats Rock
+    4. Scissors beats Paper 
 
 For the purpose of this step use "if" statements. The "if" statement contains `elif` keywords, also followed by a colon (:), followed by indented lines that contain the statements to be executed if the condition is met. I.e.:
     
-    + 1."...Nobody won, it's a tie"
-    + 2. "Congratulations! You won!! :)"
-    + 3. "Oh, the computer won. It's ok. :("
+    1."...Nobody won, it's a tie"
+    2. "Congratulations! You won!! :)"
+    3. "Oh, the computer won. It's ok. :("
 
 Lastly, add an `else` keyword followed by a colon (:), followed by an indented line that contain a statement ("Oh no, something went wrong :( ") to be executed if the original condition is not met. 
 
@@ -152,22 +152,22 @@ Add a final friendly farewell message, such as "Thank you for playing! The game 
 
 ## 3) Customize the Player Name 
 
-    + 1. In your repository, through Visual Studio Code, create a new file called ".env"
-    + 2. In the first line add a line of code 
+    1. In your repository, through Visual Studio Code, create a new file called ".env"
+    2. In the first line add a line of code 
         ```sh 
         PLAYER_NAME= "Your name"
         ```
-    + 3. Make sure the repository's ".gitignore" file includes an entry about the ".env" file
-    + 4. Create another file called "requirements.txt"
-    + 5. In the first line type:
+    3. Make sure the repository's ".gitignore" file includes an entry about the ".env" file
+    4. Create another file called "requirements.txt"
+    5. In the first line type:
     ```sh
     python-dotenv
     ```
-    + 6. Access to your repository through Gitbash and install a new package:
+    6. Access to your repository through Gitbash and install a new package:
     ```sh
     pipinstall -r requirements.txt 
     ```
-Now you can add the last lines to your game.py to display the customized name with the first welcoming message. 
+Now you can add the last lines at the top of your game.py file to display the customized name with the first welcoming message. 
 
 ```sh 
 import os 
